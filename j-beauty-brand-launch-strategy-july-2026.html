@@ -13,7 +13,7 @@
     --gold-light:#D4B483;
     --gold-pale: #EDE0C8;
     --charcoal:  #2C2825;
-    --midtone:   #6B6057;<div class="channel-card-tag">Recommended</div>
+    --midtone:   #6B6057;
     --sage:      #8A9E8C;
     --blush:     #D4A9A0;
     --deep:      #1A1714;
@@ -264,7 +264,7 @@
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: 500;
   }
   .budget-card-amount {
@@ -273,19 +273,34 @@
     font-weight: 400;
     color: var(--charcoal);
     line-height: 1;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
   }
   .budget-card-desc {
     font-size: 12px;
     color: var(--midtone);
     line-height: 1.5;
+    margin-bottom: 14px;
   }
-  .budget-bar-wrap { margin: 4px 0 0; }
+  .budget-bar-wrap {
+    margin: 0;
+  }
+  .budget-bar-track {
+    height: 4px;
+    background: #E0D9CF;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
   .budget-bar {
-    height: 3px;
+    height: 4px;
     background: var(--gold);
     border-radius: 2px;
-    transition: width 0.3s;
+  }
+  .budget-bar-pct {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--midtone);
+    font-weight: 400;
   }
 
   /* ── MATH BLOCK ── */
@@ -322,7 +337,7 @@
   }
   .channel-card {
     border: 1px solid var(--gold-pale);
-    padding: 20px 22px;
+    padding: 28px;
     border-radius: 2px;
     background: white;
     position: relative;
@@ -421,7 +436,7 @@
   .funnel-step:nth-child(2) { max-width: 580px; }
   .funnel-step:nth-child(3) { max-width: 520px; }
   .funnel-step:nth-child(4) { max-width: 460px; }
-  .funnel-step:nth-child(5) { max-width: 400px; background: var(--charcoal); border-color: var(--gold); }
+  .funnel-step:nth-child(5) { max-width: 400px; }
   .funnel-num {
     width: 28px; height: 28px;
     border-radius: 50%;
@@ -432,10 +447,7 @@
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
   }
-  .funnel-step:nth-child(5) .funnel-num { background: var(--gold-light); }
   .funnel-text { font-size: 16px; color: var(--charcoal); }
-  .funnel-step:nth-child(5) .funnel-text { color: var(--ivory); }
-  .funnel-step:nth-child(5) .funnel-sub { color: var(--gold-light); }
   .funnel-sub { font-size: 11px; color: var(--midtone); margin-top: 2px; }
 
   /* ── TOC ── */
@@ -539,9 +551,6 @@
 </head>
 <body>
 
-<!-- ════════════════════════════════════════
-     COVER
-════════════════════════════════════════ -->
 <div class="cover">
   <div class="cover-bar"></div>
   <div class="cover-eyebrow">Confidential — Client Report</div>
@@ -554,13 +563,10 @@
     <div class="cover-meta-item"><label>Report Version</label><span>1.0</span></div>
     <div style="width:100%; padding-top: 28px; margin-top: 4px;">
       <div class="cover-meta-item"><label>Prepared By</label><span>Karizma Marketing</span></div>
-    </div>  
+    </div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════
-     TABLE OF CONTENTS
-════════════════════════════════════════ -->
 <div class="page">
   <div class="toc">
     <div class="toc-title">Contents</div>
@@ -593,27 +599,15 @@
     </ul>
   </div>
 
-<!-- ════════════════════════════════════════
-     EXECUTIVE SUMMARY
-════════════════════════════════════════ -->
   <div class="section-label">Section 01</div>
   <hr class="divider-gold">
   <h2>Executive Summary</h2>
-
   <p>The established Japanese skincare brand is entering the U.S. market with meaningful strengths, including product credibility in Japan, premium positioning, and a science-backed ingredient story that can become a strong differentiator over time.</p>
-
   <p>At the same time, the U.S. launch presents a very different set of challenges than the brand may have experienced in Japan. The U.S. market will not yet have the same level of brand recognition, product familiarity, retail trust, ingredient awareness, customer reviews, influencer validation, or search demand around the brand's proprietary science.</p>
-
   <p>Because of this, <strong>we do not recommend treating the first $170,000 as a pure media spend budget.</strong> We recommend treating it as a U.S. market-entry validation budget that funds the full system needed to make paid media work.</p>
-
   <div class="table-wrap">
     <table>
-      <thead>
-        <tr>
-          <th>Budget Area</th>
-          <th>Recommended Use</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Budget Area</th><th>Recommended Use</th></tr></thead>
       <tbody>
         <tr><td>Paid media</td><td>Test demand across Meta, Google, YouTube, Microsoft Ads, ChatGPT Ads, and retargeting</td></tr>
         <tr><td>Creative production</td><td>Build UGC, expert videos, testimonial-style content, and educational ads</td></tr>
@@ -625,29 +619,20 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout">
     <div class="callout-title">Core Strategic Principle</div>
     <p>The first month should not be structured as a full-scale acquisition push. It should be structured as a <strong>controlled learning phase</strong> that identifies which audiences, offers, messages, and channels can create profitable momentum.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     LAUNCH CHALLENGE
-════════════════════════════════════════ -->
   <div class="section-label">Section 02</div>
   <hr class="divider-gold">
   <h2>Current Launch Challenge</h2>
-
   <p>The skincare client is not launching into the U.S. as a known American beauty brand. It is launching as an established Japanese skincare brand with no meaningful U.S. presence yet.</p>
   <p>U.S. consumers need several things before they are likely to buy a premium skincare product from a brand they do not know:</p>
-
   <div class="table-wrap">
     <table>
-      <thead>
-        <tr><th>Required Trust Factor</th><th>Current Launch Challenge</th></tr>
-      </thead>
+      <thead><tr><th>Required Trust Factor</th><th>Current Launch Challenge</th></tr></thead>
       <tbody>
         <tr><td>Brand awareness</td><td>U.S. customers are not yet familiar with the brand</td></tr>
         <tr><td>Ingredient understanding</td><td>The proprietary molecule does not yet have meaningful search demand</td></tr>
@@ -659,20 +644,13 @@
       </tbody>
     </table>
   </div>
-
   <p>This does not mean the opportunity is weak. It means the first phase needs to be structured differently.</p>
   <p>The brand's biggest task is not only to sell skincare. It must educate the U.S. market on why this science matters, why the current products they are using may not be enough, and why this Japanese skincare technology deserves trust.</p>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     AWARENESS LADDER
-════════════════════════════════════════ -->
   <h3>Schwartz Awareness Ladder — Where the U.S. Customer Starts</h3>
   <p>The Eugene Schwartz awareness framework is a useful lens for structuring the creative and media approach. Most cold-traffic U.S. customers will land at levels 1 or 2 — not at ingredient-awareness.</p>
-
   <div class="awareness-ladder">
-    <div class="awareness-ladder">
     <div class="awareness-rung">
       <div class="rung-num">1</div>
       <div class="rung-content">
@@ -709,19 +687,12 @@
       </div>
     </div>
   </div>
+  <hr class="divider">
 
-    </div>
-  </div>
-
-<!-- ════════════════════════════════════════
-     COMPETITIVE CONTEXT
-════════════════════════════════════════ -->
   <div class="section-label">Section 03</div>
   <hr class="divider-gold">
   <h2>Competitive Context</h2>
-
   <p>We reviewed two relevant competitors. These brands are useful comparisons, but they are not identical to the skincare client's starting position.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Competitor</th><th>Strategic Relevance</th></tr></thead>
@@ -731,9 +702,7 @@
       </tbody>
     </table>
   </div>
-
   <h3>Competitor SEO and Paid Media Snapshot</h3>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Metric</th><th>Timeline</th><th>Mother Science</th></tr></thead>
@@ -749,7 +718,6 @@
       </tbody>
     </table>
   </div>
-
   <h4>Timeline — Selected Keyword Intelligence</h4>
   <div class="table-wrap">
     <table>
@@ -765,12 +733,10 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout">
     <div class="callout-title">Strategic Interpretation</div>
     <p>Timeline proves that a brand can build search demand around a proprietary ingredient over time. But this demand does not exist automatically at launch. Timeline's current success likely reflects years of education, content, backlinks, authority building, PR, paid search, and product ecosystem development.</p>
   </div>
-
   <h4>Mother Science — Audience Profile</h4>
   <div class="table-wrap">
     <table>
@@ -783,9 +749,7 @@
       </tbody>
     </table>
   </div>
-
   <p>This supports the strategy of focusing on women in their 40s, 50s, and early 60s experiencing visible skin changes related to aging, perimenopause, menopause, sun damage, dullness, fine lines, wrinkles, and loss of firmness.</p>
-
   <h4>What We Should Borrow from Each Competitor</h4>
   <div class="table-wrap">
     <table>
@@ -796,19 +760,13 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     AUDIENCE
-════════════════════════════════════════ -->
   <div class="section-label">Section 04</div>
   <hr class="divider-gold">
   <h2>Recommended Core Audience</h2>
-
   <p><strong>Primary:</strong> Women ages 40–64 who are actively trying to maintain youthful-looking skin and are willing to invest in premium skincare.</p>
   <p><strong>Secondary:</strong> Women ages 35–44 who are beginning to invest in prevention and early visible aging support.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Pain Point</th><th>Marketing Opportunity</th></tr></thead>
@@ -823,70 +781,43 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     OFFER CHALLENGE
-════════════════════════════════════════ -->
   <div class="section-label">Section 05</div>
   <hr class="divider-gold">
   <h2>The Offer Challenge</h2>
-
   <p>The current proposed entry offer appears to be subscription-oriented. Based on our experience, this creates a significant challenge for a brand that is new to the U.S. market.</p>
   <p>A subscription is a larger commitment than a one-time trial. For a new customer who does not know the brand, does not understand the ingredient, and has not yet seen proof, subscription can create unnecessary friction.</p>
   <p><strong>We recommend treating subscription as a retention and upsell mechanism, not the primary cold traffic offer.</strong></p>
-
   <h3>Recommended Offer Sequence</h3>
   <div class="funnel">
     <div class="funnel-step">
       <div class="funnel-num">1</div>
-      <div>
-        <div class="funnel-text"><strong>Cold Traffic</strong></div>
-        <div class="funnel-sub">$45 discovery kit or starter ritual — low friction, easy yes</div>
-      </div>
+      <div><div class="funnel-text"><strong>Cold Traffic</strong></div><div class="funnel-sub">$45 discovery kit or starter ritual — low friction, easy yes</div></div>
     </div>
     <div class="funnel-step">
       <div class="funnel-num">2</div>
-      <div>
-        <div class="funnel-text"><strong>First Purchase Upsell</strong></div>
-        <div class="funnel-sub">Full-size product or two-product routine</div>
-      </div>
+      <div><div class="funnel-text"><strong>First Purchase Upsell</strong></div><div class="funnel-sub">Full-size product or two-product routine</div></div>
     </div>
     <div class="funnel-step">
       <div class="funnel-num">3</div>
-      <div>
-        <div class="funnel-text"><strong>Post-Purchase Education</strong></div>
-        <div class="funnel-sub">Science, routine guidance, reviews, expert proof via email/SMS</div>
-      </div>
+      <div><div class="funnel-text"><strong>Post-Purchase Education</strong></div><div class="funnel-sub">Science, routine guidance, reviews, expert proof via email/SMS</div></div>
     </div>
     <div class="funnel-step">
       <div class="funnel-num">4</div>
-      <div>
-        <div class="funnel-text"><strong>Retention Offer</strong></div>
-        <div class="funnel-sub">Subscribe and save — introduced after trust has been established</div>
-      </div>
+      <div><div class="funnel-text"><strong>Retention Offer</strong></div><div class="funnel-sub">Subscribe and save — introduced after trust has been established</div></div>
     </div>
     <div class="funnel-step">
       <div class="funnel-num">5</div>
-      <div>
-        <div class="funnel-text"><strong>Repeat Purchase</strong></div>
-        <div class="funnel-sub">Full-size replenishment, routine bundle, subscription</div>
-      </div>
+      <div><div class="funnel-text"><strong>Repeat Purchase</strong></div><div class="funnel-sub">Full-size replenishment, routine bundle, subscription</div></div>
     </div>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     TWO-PRODUCT LIMITATION
-════════════════════════════════════════ -->
   <div class="section-label">Section 06</div>
   <hr class="divider-gold">
   <h2>Why a Two-Product Launch Creates Limitations</h2>
-
   <p>Launching with two products may feel like a controlled way to test the U.S. market, but it can also skew the test negatively.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Area</th><th>Impact of Only Two Products</th></tr></thead>
@@ -901,23 +832,16 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout-risk callout">
     <div class="callout-title">Important Consideration</div>
     <p>If the skincare client wants to learn whether the U.S. market responds to the brand, launching with only two products may not provide a clean read. The test may underperform not because the product is weak, but because the e-commerce experience lacks the product depth and conversion paths customers expect from a premium skincare brand.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     PAID MEDIA ECONOMICS
-════════════════════════════════════════ -->
   <div class="section-label">Section 07</div>
   <hr class="divider-gold">
   <h2>Paid Media Economics and Realistic Expectations</h2>
-
   <p>Paid media in beauty and skincare is competitive. The first month should be expected to generate learning, not immediate profit.</p>
-
   <div class="math-block">
     <h4>Scenario A — 1% Conversion Rate</h4>
     <div class="math-row"><span>Average CPC</span><span>$4.00</span></div>
@@ -925,7 +849,6 @@
     <div class="math-row"><span>Clicks needed per purchase</span><span>100</span></div>
     <div class="math-row math-result"><span>Estimated cost per purchase</span><span>$400</span></div>
   </div>
-
   <div class="math-block">
     <h4>Scenario B — 2% Conversion Rate</h4>
     <div class="math-row"><span>Average CPC</span><span>$4.00</span></div>
@@ -933,9 +856,7 @@
     <div class="math-row"><span>Clicks needed per purchase</span><span>50</span></div>
     <div class="math-row math-result"><span>Estimated cost per purchase</span><span>$200</span></div>
   </div>
-
   <p>With a first purchase AOV of $75–$90, the brand may lose money on first purchase acquisition at launch — particularly in Scenario A. This is not unusual for a premium beauty launch, but it requires alignment around the real goal of the first 30–60 days: finding the combinations of audience, message, offer, creative, and landing page that can scale later.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Factor</th><th>Why It Matters</th></tr></thead>
@@ -952,20 +873,13 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     SEARCH DEMAND
-════════════════════════════════════════ -->
   <div class="section-label">Section 08</div>
   <hr class="divider-gold">
   <h2>Search Demand Limitations</h2>
-
   <p>Google Ads and SEO are demand capture channels. They work best when people are already searching for the thing being sold. For the Japanese skincare client, there may be little to no U.S. search volume around the proprietary molecule at launch.</p>
-
   <h3>Two-Lane Search Strategy</h3>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Lane</th><th>Keyword Theme</th><th>Example Terms</th></tr></thead>
@@ -984,18 +898,12 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     SEO ROLE
-════════════════════════════════════════ -->
   <div class="section-label">Section 09</div>
   <hr class="divider-gold">
   <h2>SEO Role in the Launch</h2>
-
   <p>SEO should be included in the strategy, but it should not be expected to carry the first-month launch. SEO takes time, and the brand will be starting in the U.S. without existing search demand around the proprietary molecule. That said, <strong>SEO should begin immediately</strong> because the education challenge is significant.</p>
-
   <h4>High-Intent Landing Pages</h4>
   <div class="table-wrap">
     <table>
@@ -1012,7 +920,6 @@
       </tbody>
     </table>
   </div>
-
   <h4>Educational Content-Commerce Pages</h4>
   <div class="table-wrap">
     <table>
@@ -1029,18 +936,12 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     RAMP-UP TIMELINE
-════════════════════════════════════════ -->
   <div class="section-label">Section 10</div>
   <hr class="divider-gold">
   <h2>Paid Media Ramp-Up Timeline</h2>
-
   <p>A large paid media launch should not be rushed. To responsibly prepare an ad account for a meaningful launch budget, we typically recommend 2–4 weeks of research, setup, tracking, creative development, and quality assurance before scaling.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Phase</th><th>Timing</th><th>Workstream</th></tr></thead>
@@ -1055,89 +956,77 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     BUDGET ALLOCATION
-════════════════════════════════════════ -->
   <div class="section-label">Section 11</div>
   <hr class="divider-gold">
   <h2>Recommended First-Month Budget Allocation</h2>
-
   <p>We recommend allocating the $170,000 across the full paid media launch system, not only ad spend. Direct ad spend in month one should be <strong>capped around $95,000–$135,000</strong> unless early data shows the funnel is converting efficiently. The balance funds the assets that make paid media work.</p>
-
   <div class="budget-grid">
     <div class="budget-card">
       <div class="budget-card-label">Meta Ads</div>
       <div class="budget-card-amount">$35–40K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:24%"></div></div>
       <div class="budget-card-desc">UGC testing, education, pain-point messaging, retargeting</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:82%"></div></div><div class="budget-bar-pct">~24% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">Google Ads</div>
       <div class="budget-card-amount">$25–30K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:18%"></div></div>
       <div class="budget-card-desc">Existing demand capture — anti-aging, dark spots, skin rejuvenation</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:60%"></div></div><div class="budget-bar-pct">~16% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">YouTube Ads</div>
       <div class="budget-card-amount">$10–15K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:9%"></div></div>
       <div class="budget-card-desc">Science education, brand trust, retargeting audiences</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:36%"></div></div><div class="budget-bar-pct">~7% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">UGC + Creative Production</div>
       <div class="budget-card-amount">$15–20K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:12%"></div></div>
       <div class="budget-card-desc">Build the creative library needed for paid social and retargeting</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:48%"></div></div><div class="budget-bar-pct">~10% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">Influencer + Expert Seeding</div>
       <div class="budget-card-amount">$20–25K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:15%"></div></div>
       <div class="budget-card-desc">Third-party validation, trackable content assets</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:54%"></div></div><div class="budget-bar-pct">~13% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">Landing Pages + CRO</div>
       <div class="budget-card-amount">$10–15K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:9%"></div></div>
       <div class="budget-card-desc">Improve conversion rate before pushing scale</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:36%"></div></div><div class="budget-bar-pct">~7% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">PR + Advertorial</div>
       <div class="budget-card-amount">$10–20K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:12%"></div></div>
       <div class="budget-card-desc">Credibility, backlinks, editorial validation</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:44%"></div></div><div class="budget-bar-pct">~9% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">Microsoft/Bing Ads</div>
       <div class="budget-card-amount">$5–10K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:6%"></div></div>
       <div class="budget-card-desc">Older search audiences, adapt winning Google campaigns</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:22%"></div></div><div class="budget-bar-pct">~4% of total budget</div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-label">Testing + Management Reserve</div>
       <div class="budget-card-amount">$20–40K</div>
-      <div class="budget-bar-wrap"><div class="budget-bar" style="width:18%"></div></div>
       <div class="budget-card-desc">Flexibility for early winners, emerging opportunities, and account management</div>
+      <div class="budget-bar-wrap"><div class="budget-bar-track"><div class="budget-bar" style="width:72%"></div></div><div class="budget-bar-pct">~18% of total budget</div></div>
     </div>
   </div>
-
   <div class="callout-new callout">
     <div class="callout-title">New — Budget Reallocation Consideration</div>
     <p>We recommend carving $5,000–$15,000 out of the testing reserve specifically to pilot ChatGPT Ads and pay-to-be-listed placements in relevant beauty editorial and roundup content. These are emerging first-mover opportunities with strong demographic alignment that carry relatively low minimum commitment. See Section 13 and 15 for detail.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     CHANNEL STRATEGY
-════════════════════════════════════════ -->
   <div class="section-label">Section 12</div>
   <hr class="divider-gold">
   <h2>Channel Strategy</h2>
-
   <h3>Meta Ads</h3>
   <p>Meta should be used for education, UGC testing, proof-building, and retargeting. Video is especially important because the product requires education. Static ads can support the account but should not be the creative foundation.</p>
   <div class="table-wrap">
@@ -1154,7 +1043,6 @@
       </tbody>
     </table>
   </div>
-
   <h3>Google Search</h3>
   <p>Google should capture existing demand, not create the entire market. Spend may be limited by keyword search volume — it is important not to force spend into irrelevant or overly broad keywords just to use budget.</p>
   <div class="table-wrap">
@@ -1170,10 +1058,8 @@
       </tbody>
     </table>
   </div>
-
   <h3>Microsoft Ads</h3>
   <p>Microsoft Ads should be tested because the demographic fit may be strong for an older, higher-income audience. Winning Google Search campaigns can often be adapted with relatively low setup friction.</p>
-
   <h3>YouTube Ads</h3>
   <p>YouTube should be used to build credibility and explain the science. It can also create retargeting audiences based on video views, which can then be nurtured through Meta, Google, and display retargeting.</p>
   <div class="table-wrap">
@@ -1189,87 +1075,67 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     EXPANDED CHANNELS — NEW
-════════════════════════════════════════ -->
   <div class="section-label">Section 13 — New Additions</div>
   <hr class="divider-gold">
   <h2>Expanded Channel Opportunities</h2>
-
   <p>Beyond the core Meta, Google, YouTube, and Microsoft stack, the following channels represent potentially strong fits for this audience with limited competition in the premium skincare space.</p>
-
   <div class="channel-grid">
-
     <div class="channel-card">
       <div class="channel-card-tag new">New — 2026</div>
       <h4>ChatGPT Ads</h4>
       <p>OpenAI launched its self-serve advertising platform in February 2026. With 2.5 billion prompts processed daily, the platform reaches users actively researching and comparing products. A user asking "what is the best anti-aging serum for women over 50" is an extremely high-intent signal that no other ad platform can match. Contextual, conversational, and education-first — a strong fit for this brand. Recommended starting budget: $2,000–$3,000.</p>
       <div class="channel-card-track">Track via: UTM links, dedicated landing page, promo code</div>
     </div>
-
     <div class="channel-card">
       <div class="channel-card-tag">Recommended</div>
       <h4>Amazon Ads</h4>
       <p>If the brand lists products on Amazon, dedicating a portion of the paid media budget to Amazon Ads is strongly recommended. Sponsored placements alongside searches for anti-aging serums, firming treatments, and Japanese skincare capture shoppers already in purchase mode — a higher-intent signal than most social platforms. Amazon's audience skews older and higher-income, and Amazon DSP can also retarget high-intent beauty shoppers across the web. Recommended starting budget: $3,000–$5,000.</p>
       <div class="channel-card-track">Track via: Amazon attribution links, UTM for off-Amazon retargeting</div>
     </div>
-
     <div class="channel-card">
       <div class="channel-card-tag">Recommended</div>
       <h4>Connected TV (CTV)</h4>
       <p>Platforms such as Hulu, Peacock, and Roku allow targeting by age, gender, household income, and interest category. A 15–30 second brand awareness spot paired with a QR code or vanity URL can reach women 45–64 in premium content environments. CTV builds brand familiarity before paid search and social retargeting takes over. Recommended starting budget: $5,000–$8,000 for a single creative test.</p>
       <div class="channel-card-track">Track via: QR code, vanity URL, branded search lift</div>
     </div>
-
     <div class="channel-card">
       <div class="channel-card-tag">Recommended</div>
       <h4>Podcast Sponsorships</h4>
       <p>Host-read podcast ads are among the highest-trust formats available. Women 40–60 who listen to menopause, longevity, wellness, and beauty podcasts are a strong match for this brand. A 60-second mid-roll read by a trusted host can outperform display or social impressions significantly. Recommended targeting: shows with 20,000–100,000 downloads per episode in the menopause, healthy aging, or premium beauty category.</p>
       <div class="channel-card-track">Track via: vanity URL, promo code (e.g., RITUAL10)</div>
     </div>
-
     <div class="channel-card">
       <div class="channel-card-tag">Recommended</div>
       <h4>Newsletter &amp; Substack Sponsorships</h4>
       <p>Premium newsletters and independent Substack writers covering menopause, longevity, and beauty science command some of the most engaged audiences in this demographic. Unlike traditional publications, these writers have a personal, trusted relationship with readers who actively chose to subscribe. Costs range from $500–$8,000 per placement depending on format and list size. An underused channel in the premium skincare space with strong demographic alignment and measurable attribution.</p>
       <div class="channel-card-track">Track via: UTM link, promo code, dedicated landing page</div>
     </div>
-
     <div class="channel-card">
       <div class="channel-card-tag">Recommended</div>
       <h4>Celebrity Gifting &amp; Award Submissions</h4>
       <p>Strategic gifting to celebrity estheticians, stylists, and talent-adjacent beauty editors can create organic visibility that paid media cannot replicate. Submitting to programs such as Allure Best of Beauty, NewBeauty Awards, and Women's Health Beauty Awards creates permanent third-party validation usable in paid creative and on-site. Japanese heritage and proprietary science are strong differentiators in award submissions. High credibility impact relative to budget investment.</p>
       <div class="channel-card-track">Track via: PR outreach log, award submission calendar, earned media monitoring</div>
     </div>
-
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     SPECIFIC INFLUENCER TARGETS
-════════════════════════════════════════ -->
   <div class="section-label">Section 14 — New Additions</div>
   <hr class="divider-gold">
   <h2>Specific Influencer and Expert Partner Categories</h2>
-
   <p>Rather than general outreach, the influencer strategy should prioritize category-specific voices with proven credibility in the anti-aging, menopause, longevity, or premium skincare space. The following categories represent the strongest fits, with notes on why each works and how to structure the partnership for trackable performance.</p>
-
   <div class="callout-new callout">
     <div class="callout-title">Key Principle</div>
     <p>Every influencer and expert partnership should be structured with usage rights included. The best-performing content should be whitelisted and run as paid media. This turns a one-time seeding expense into a scalable ad creative asset.</p>
   </div>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Partner Category</th><th>Why It Fits</th><th>Follower Sweet Spot</th><th>Partnership Structure</th></tr></thead>
       <tbody>
         <tr><td><strong>Board-certified dermatologists</strong></td><td>Highest trust signal for science-backed skincare claims. A dermatologist's review can anchor the ingredient story credibly.</td><td>50K–500K on YouTube or Instagram</td><td>Gifted review + paid science explainer video with usage rights</td></tr>
         <tr><td><strong>Licensed estheticians</strong></td><td>Practical skincare authority. Estheticians are trusted by the 40–60 age group for honest, experience-based product opinions.</td><td>20K–200K</td><td>Gifted review + routine integration video with usage rights</td></tr>
-        <tr><td><strong>Cosmetic chemists</strong></td><td>Ingredient credibility. Cosmetic chemist creators have built strong followings among research-minded skincare buyers who want to understand mechanisms.</td><td>30K–300K on YouTube/TikTok (even without TikTok ads, organic reach matters)</td><td>Ingredient breakdown video + affiliate code</td></tr>
+        <tr><td><strong>Cosmetic chemists</strong></td><td>Ingredient credibility. Cosmetic chemist creators have built strong followings among research-minded skincare buyers who want to understand mechanisms.</td><td>30K–300K on YouTube/TikTok</td><td>Ingredient breakdown video + affiliate code</td></tr>
         <tr><td><strong>Menopause educators and OB-GYNs</strong></td><td>Direct demographic alignment. A menopause specialist speaking about how skin changes during hormonal transitions is the most contextually relevant possible placement for this brand.</td><td>15K–150K</td><td>Sponsored educational post or video segment on skin + hormones</td></tr>
         <tr><td><strong>Mature beauty creators (40–60)</strong></td><td>The customer sees herself in the creator. Relatability drives conversion far better than aspirational content for this age group.</td><td>25K–250K on YouTube or Instagram</td><td>Authentic 30-day trial format with before/after where possible</td></tr>
         <tr><td><strong>Longevity and biohacking voices</strong></td><td>Premium healthy aging positioning. The brand's science story fits naturally within a longevity or cellular health narrative.</td><td>30K–500K</td><td>Science education partnership, affiliate code</td></tr>
@@ -1277,25 +1143,17 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout">
     <div class="callout-title">Engagement Over Size</div>
     <p>For this audience and product, a dermatologist with 40,000 engaged followers on YouTube will likely outperform a general beauty influencer with 400,000 followers. Prioritize audience relevance, engagement quality, and comment sentiment over raw follower count.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     PAY TO BE LISTED
-════════════════════════════════════════ -->
   <div class="section-label">Section 15 — New Additions</div>
   <hr class="divider-gold">
   <h2>Pay-to-Be-Listed: Editorial and Roundup Placements</h2>
-
   <p>One of the most underused but highly effective strategies for premium beauty launches is securing placement in "best of" editorial roundups, expert-curated lists, and beauty recommendation engines on high-authority online publications. These placements create trust, drive organic search traffic, and generate backlinks — all while being directly trackable.</p>
-
   <p>For a brand entering the U.S. with no existing reviews or social proof, being listed in a credible editorial context can substitute for the social proof the brand does not yet have on its own site.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Placement Type</th><th>Examples</th><th>Why It Works</th><th>How to Track</th></tr></thead>
@@ -1309,23 +1167,16 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout">
     <div class="callout-title">Realistic Cost Range</div>
     <p>Sponsored inclusion in editorial roundups on mid-tier beauty publications typically ranges from $1,500–$8,000 per placement. Larger authority sites may require more significant investment or PR relationships. Starting with 3–5 well-chosen mid-tier placements with strong SEO authority is a practical approach within the testing reserve budget.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     CREATIVE STRATEGY
-════════════════════════════════════════ -->
   <div class="section-label">Section 16</div>
   <hr class="divider-gold">
   <h2>Creative Strategy</h2>
-
   <p>The first launch should not depend on one message or one offer. It should test multiple angles simultaneously, with budget distributed across them and shifted toward winners after the first 2–3 weeks of data.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Angle</th><th>Core Message</th><th>Best Channel</th></tr></thead>
@@ -1337,18 +1188,12 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     OFFER TESTING
-════════════════════════════════════════ -->
   <div class="section-label">Section 17</div>
   <hr class="divider-gold">
   <h2>Offer Testing Plan</h2>
-
   <p>Only testing one offer with a large media budget is not recommended. It limits learning and can cause the campaign to falsely underperform. We recommend testing several offers in controlled ways and determining the winner by contribution margin, conversion rate, AOV, repeat purchase potential, and quality of customer acquired.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Offer</th><th>Why Test It</th></tr></thead>
@@ -1363,18 +1208,12 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     CRO
-════════════════════════════════════════ -->
   <div class="section-label">Section 18</div>
   <hr class="divider-gold">
   <h2>Conversion Rate Optimization Priorities</h2>
-
   <p>The website and landing pages will have a major impact on ad performance. Before scaling spend, the paid landing pages should include:</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>CRO Element</th><th>Purpose</th></tr></thead>
@@ -1393,23 +1232,16 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout-risk callout">
     <div class="callout-title">Critical Reminder</div>
     <p>Ads cannot fix a weak offer. Ads cannot overcome unclear product education. A landing page that does not educate and build trust before asking for purchase will increase cost per acquisition regardless of how well the ad performs upstream.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     SKIN QUIZ
-════════════════════════════════════════ -->
   <div class="section-label">Section 19</div>
   <hr class="divider-gold">
   <h2>Skin Quiz Recommendation</h2>
-
   <p>A skin quiz is a strong recommendation for the future. However, with only two launch products, a full quiz has limited usefulness as a product recommendation engine. A quiz performs best when it can guide different customers to different products, bundles, routines, or regimens.</p>
-
   <h4>Recommended for Launch (Lighter Version)</h4>
   <div class="table-wrap">
     <table>
@@ -1421,16 +1253,11 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     MEASUREMENT
-════════════════════════════════════════ -->
   <div class="section-label">Section 20</div>
   <hr class="divider-gold">
   <h2>Recommended Reporting and Measurement</h2>
-
   <h4>Layer 1 — Direct Response Metrics</h4>
   <div class="table-wrap">
     <table>
@@ -1446,7 +1273,6 @@
       </tbody>
     </table>
   </div>
-
   <h4>Layer 2 — Market-Building Metrics</h4>
   <div class="table-wrap">
     <table>
@@ -1463,21 +1289,15 @@
       </tbody>
     </table>
   </div>
-
   <div class="callout">
     <div class="callout-title">Measurement Principle</div>
     <p>The first month should not be judged only by ROAS. For a new U.S. market entry, we need to measure whether the launch is creating the conditions for future profitable acquisition.</p>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     30/60/90
-════════════════════════════════════════ -->
   <div class="section-label">Section 21</div>
   <hr class="divider-gold">
   <h2>30 / 60 / 90 Day Plan</h2>
-
   <div class="timeline-grid">
     <div class="timeline-col">
       <div class="timeline-col-label">Days 1–30</div>
@@ -1515,18 +1335,12 @@
       <div class="timeline-item">Scale ChatGPT Ads if early data is favorable</div>
     </div>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     PRODUCT EXPANSION
-════════════════════════════════════════ -->
   <div class="section-label">Section 22</div>
   <hr class="divider-gold">
   <h2>Product Expansion Recommendation</h2>
-
   <p>We recommend that the skincare client consider launching with more than two products, or at minimum creating bundles, travel sizes, and routine-based sets from the two products.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Product or Offer Addition</th><th>Why It Helps</th></tr></thead>
@@ -1541,18 +1355,12 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     RISK
-════════════════════════════════════════ -->
   <div class="section-label">Section 23</div>
   <hr class="divider-gold">
   <h2>Risk Considerations</h2>
-
   <p>Every market entry involves risk. The following considerations are shared not to discourage the launch, but to ensure the brand enters with clear expectations and a structure that protects the budget.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Risk Area</th><th>Description</th><th>Mitigation</th></tr></thead>
@@ -1567,18 +1375,12 @@
       </tbody>
     </table>
   </div>
-
   <hr class="divider">
 
-<!-- ════════════════════════════════════════
-     FINAL RECOMMENDATION
-════════════════════════════════════════ -->
   <div class="section-label">Section 24</div>
   <hr class="divider-gold">
   <h2>Strategic Recommendation</h2>
-
   <p>We recommend using the $170,000 to build the U.S. launch system required for paid media success — not to put the majority of the budget directly into ads in month one.</p>
-
   <div class="table-wrap">
     <table>
       <thead><tr><th>Reality</th><th>Strategic Response</th></tr></thead>
@@ -1594,7 +1396,6 @@
       </tbody>
     </table>
   </div>
-
   <h3>The Recommended Path</h3>
   <ol style="padding-left:20px; color:var(--midtone); font-size:14px; line-height:2.2;">
     <li>Lead with familiar pain points — aging skin, dark spots, wrinkles, firmness, dullness, menopause skin, and skin rejuvenation.</li>
@@ -1608,17 +1409,13 @@
     <li>Test multiple offers before committing the majority of budget.</li>
     <li>Set realistic expectations that the first 30–60 days may prioritize learning over profit.</li>
   </ol>
-
   <div class="callout">
     <div class="callout-title">Bottom Line</div>
     <p>This approach gives the skincare client the strongest chance of entering the U.S. market responsibly, learning quickly, protecting budget, and building a foundation that can scale beyond the first launch month.</p>
   </div>
 
-</div><!-- end .page -->
+</div>
 
-<!-- ════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════ -->
 <div class="footer">
   <div class="footer-brand">Karizma Marketing</div>
   <div class="footer-note">Confidential — For Client Use Only — Q3 2026</div>
